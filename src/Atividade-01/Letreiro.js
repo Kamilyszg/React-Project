@@ -7,7 +7,6 @@ function LetreiroTexto({ texto }) {
 
 export default function Letreiro() {
   //cria-se uma referencia
-  const containerRef = React.useRef(null);
 
   if (!window.letreiroIniciado) {
     window.letreiroIniciado = true;
