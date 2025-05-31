@@ -1,0 +1,55 @@
+.form-base {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.form-base label {
+  font-weight: bold;
+}
+
+.form-base input,
+.form-base select,
+.form-base textarea {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-base textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.form-base button {
+  padding: 6px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-base button:hover {
+  background-color: #0056b3;
+}
+
+.form-image-wrapper {
+  border-radius: 6px;
+  overflow: hidden;
+  max-height: 150px;
+  margin: 0 auto 10px;
+  width: fit-content;
+}
+
+.form-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}

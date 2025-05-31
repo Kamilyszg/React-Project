@@ -1,5 +1,6 @@
 import { sculptureList } from "./data";
 import { useState } from "react";
+import './Gallery.css'
 
 export default function Gallery(){
     const [index, setIndex] = useState(0);
@@ -15,13 +16,12 @@ export default function Gallery(){
     }
 
     return(
-        <>
+        <div className="gallery-container">
             <button onClick={handleClick}>
                 Next
             </button>
             <h2>
-                <i>{sculpture.name}</i>
-                by {sculpture.artist}
+                <i>{sculpture.name}</i> by {sculpture.artist}
             </h2>
             <h3>
                 ({index + 1}) of {sculptureList.length}
@@ -29,12 +29,14 @@ export default function Gallery(){
             <button onClick={handleShowMore}>
                 {showMore ? 'Hide' : 'Show'} details
             </button>
-            <img
-                src={sculpture.url}
-                alt={sculpture.alt}
-            /> 
+            <div className="gallery-image-wrapper">
+                <img
+                    src={sculpture.url}
+                    alt={sculpture.alt}
+                    className="gallery-image"
+                />
+            </div>
             {showMore &&  <p>{sculpture.description}</p>}
-        </>
+        </div>
     );
 }
-

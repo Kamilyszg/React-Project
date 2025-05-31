@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './List.css';
 
 let inicialArtists = [
     {id: 0, name: 'Marta Colvin Andrade'},
@@ -9,7 +10,7 @@ let inicialArtists = [
 export default function List2(){
     const [artists, setArtists] = useState(inicialArtists);
     return(
-        <>
+        <div className="list-container">
             <h1>Inspiring sculptors:</h1>
             <ul>
                 {artists.map(artist => (
@@ -26,6 +27,6 @@ export default function List2(){
                     </li>
                 ))}
             </ul>
-        </>
+        </div>
     );
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './FormBase.css';
 
 export default function Form3(){
     const [person, setPerson] = useState({
@@ -11,45 +12,29 @@ export default function Form3(){
     });
 
     function handleNameChage(e){
-        setPerson({
-            ...person,
-            name: e.target.value
-        });
+        setPerson({...person, name: e.target.value});
     }
-
     function handleTitleChange(e){
         setPerson({
             ...person,
-            artwork: {
-                ...person.artwork,
-                title: e.target.value
-            }
+            artwork: {...person.artwork, title: e.target.value}
         });
     }
-
     function handleImageChange(e){
         setPerson({
             ...person,
-            artwork: {
-                ...person.artwork,
-                image: e.target.value
-            }
+            artwork: {...person.artwork, image: e.target.value}
         });
     }
-
-
     function handleCityChange(e){
         setPerson({
             ...person,
-            artwork: {
-                ...person.artwork,
-                city: e.target.value
-            }
+            artwork: {...person.artwork, city: e.target.value}
         });
     }
 
     return(
-        <>
+        <div className="form-base">
             <label>
                 Name:
                 <input value={person.name} onChange={handleNameChage} />
@@ -67,14 +52,13 @@ export default function Form3(){
                 <input value={person.artwork.image} onChange={handleImageChange}/>
             </label>
             <p>
-                <i>{person.artwork.title}</i>
-                {' by '}
-                {person.name}
+                <i>{person.artwork.title}</i> by {person.name}
                 <br />
                 (located in {person.artwork.city})
             </p>
-            <img src={person.artwork.image} alt={person.artwork.title}
-            />
-        </>
+            <div className="form-image-wrapper">
+                <img className="form-image" src={person.artwork.image} alt={person.artwork.title} />
+            </div>
+        </div>
     );
 }

@@ -1,0 +1,31 @@
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.module-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.module-card h2 {
+  font-size: 1rem;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.link-voltar {
+  display: inline-block;
+  margin: 24px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  text-align: center;
+}

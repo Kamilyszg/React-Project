@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './FormBase.css';
 
 export default function Form1(){
     const [to, setTo] = useState('Alice');
@@ -12,8 +13,8 @@ export default function Form1(){
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>To:{' '}
+        <form onSubmit={handleSubmit} className="form-base">
+            <label>To:
                 <select
                     value={to}
                     onChange={e=> setTo(e.target.value)}>

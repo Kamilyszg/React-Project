@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './List.css';
 
 let initialShapes = [
     {id: 0, type: 'circle', x: 50, y: 100},
@@ -24,8 +25,8 @@ export default function ShapeEditor() {
     }
 
     return(
-        <>
-            <button onClick={handleClick}>
+        <div className="list-container">
+            <button className="list-button" onClick={handleClick}>
                 Move circles down!
             </button>
             <div
@@ -51,6 +52,6 @@ export default function ShapeEditor() {
                 />
                 ))}
             </div>
-        </>
+        </div>
     );
 }

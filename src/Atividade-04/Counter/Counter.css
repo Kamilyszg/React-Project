@@ -1,0 +1,19 @@
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px; /* espaçamento entre número e botão */
+  height: 100%; /* para garantir que preencha o bloco pai */
+  justify-content: center; /* centraliza verticalmente */
+}
+
+.counter-container h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.counter-container button {
+  padding: 8px 16px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}

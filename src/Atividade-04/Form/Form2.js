@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './FormBase.css';
 
 export default function Form2(){
     const [person, setPerson] = useState({
@@ -7,29 +8,18 @@ export default function Form2(){
         email: 'bhepworth@sculpture.com'
     });
 
-        function handleFirstNameChange(e) {
-        setPerson({
-            ...person,
-            firstName: e.target.value
-        });
+    function handleFirstNameChange(e) {
+        setPerson({...person, firstName: e.target.value});
     }
-
     function handleLastNameChange(e) {
-        setPerson({
-            ...person,
-            lastName: e.target.value
-        });
+        setPerson({...person, lastName: e.target.value});
     }
-
     function handleEmailChange(e) {
-        setPerson({
-            ...person,
-            email: e.target.value
-        });
+        setPerson({...person, email: e.target.value});
     }
 
     return(
-        <>
+        <div className="form-base">
             <label>
                 First name:
                 <input value={person.firstName} onChange={handleFirstNameChange}/>
@@ -43,10 +33,8 @@ export default function Form2(){
                 <input value={person.email} onChange={handleEmailChange}/>
             </label>
             <p>
-                {person.firstName}{' '}
-                {person.lastName}{' '}
-                ({person.email})
+                {person.firstName} {person.lastName} ({person.email})
             </p>
-        </>
+        </div>
     );
 }
