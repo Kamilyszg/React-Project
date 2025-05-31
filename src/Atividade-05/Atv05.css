@@ -1,0 +1,32 @@
+.container-atividade-05 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px;
+}
+
+.bloco-componente {
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.bloco-componente h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #2a0b0b;
+  padding-bottom: 8px;
+}
+
+.link-voltar {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.link-voltar:hover {
+  background-color: #0056b3;
+}

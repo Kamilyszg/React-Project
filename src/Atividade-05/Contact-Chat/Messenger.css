@@ -1,0 +1,110 @@
+.messenger-container {
+  padding: 20px;
+  background-color: #fffbea;
+  border: 2px solid #e1c542;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}.contact-list {
+  padding: 20px;
+  background-color: #fffbea;
+  border: 2px solid #e1c542;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 10px auto;
+  min-height: 200px; /* aumenta a altura da lista */
+}
+
+.contact-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+}
+
+.contact-list button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.chat {
+  padding: 20px;
+  background-color: #fffbea;
+  border: 2px solid #e1c542;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.chat textarea {
+  width: 100%;
+  padding: 10px;
+  height: 100px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 14px;
+}
+
+.chat button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right; /* botão menor, alinhado à direita */
+}
+
+
+.contact-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+}
+
+.contact-list button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chat {
+  flex-grow: 1;
+}
+
+.chat textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.chat button {
+  padding: 8px 16px;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
